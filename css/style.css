@@ -1,1 +1,362 @@
+/*
+Author: Sandeep Poudel
+Date: 21/02/2023
+File Name: styles.css
+*/
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+body {
+    background-color: #000;
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+
+
+nav ul {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    text-align: right;
+
+}
+
+nav ul:first-child li {
+    font-size: 0.8em;
+    font-family: cursive, sans-serif, 'Times New Roman', Times;
+}
+
+
+
+nav ul a {
+    display: block;
+    color: #010e40;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+.announcement {
+    display: none;
+}
+
+#billboard img {
+    display: none;
+}
+
+main {
+    display: block;
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.trading-hour li {
+    display: block;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+footer p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #e11d06;
+    text-decoration: none;
+}
+
+#image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.testimonial-container {
+    border: 2px solid #ba939d;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+}
+
+.testimonial-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+nav ul {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.billboard-testimonial {
+    display: none;
+}
+
+#image-container {
+    display: block;
+}
+
+.image {
+    border: 3px solid #bf1121;
+    margin: 10px 0;
+}
+
+.image a {
+    text-decoration: none;
+    color: #000;
+}
+.image p{
+    text-align: center;
+}
+
+.cart, .book-now {
+    display: block;
+    padding: 5px;
+    border-color: #e77b9b94;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cart:hover, .book-now:hover {
+    background-color: #ff4442;
+    color: white;
+}
+
+#registration {
+    display: none;
+}
+
+.shopping-container a {
+    text-decoration: none;
+}
+
+button.cart {
+    float: left;
+    margin-right: 20px;
+}
+
+#payment-form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#payment-form h2 {
+    text-align: center;
+    color: #010e40;
+}
+
+/* Style rules for form elements */
+#contact h3{
+    font-size: 15px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    .tablet-desktop {
+        display: block;
+    }
+
+    #billboard img {
+        display: block;
+    }
+
+    .mobile, .mobile-nav, .mobile-nav a.menu-icon {
+        display: none;
+    }
+
+    .announcement {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #3396a1;
+        font-size: 2.5em;
+        font-weight: bold;
+        font-family: 'Send Flowers', cursive;
+    }
+
+    header {
+        width: 25%;
+        float: left;
+    }
+
+    nav ul:first-child li {
+        font-size: 0.8em;
+        font-family: cursive, sans-serif, 'Times New Roman', Times;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.3em;
+    }
+
+    nav ul a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+        text-decoration: none;
+    }
+
+    #submission {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+    }
+
+    .login, .register {
+        border-right: 7px solid #f10f0d;
+        border-bottom: none;
+    }
+
+    .register {
+        border: none;
+    }
+
+    .billboard-testimonial {
+        display: block;
+    }
+
+    #image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .image {
+        margin: 0;
+        border: none;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #contact h3{
+        font-size: 1.17em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+    nav {
+        margin: 4em 3em 0 0;
+    }
+
+    nav li {
+        font-size: 1.4em;
+    }
+
+    .announcement {
+        top: 63%;
+    }
+
+    .detail-desc-container {
+        display: inline-block
+    }
+
+    .detail-image img {
+        width: 50%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    #payment-form {
+        width: auto;
+    }
+
+    #payment-form .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    #payment-form .btn {
+        grid-column: 1 / span 3;
+    }
+    .image p{
+        text-align: justify;
+    }
+}
 
